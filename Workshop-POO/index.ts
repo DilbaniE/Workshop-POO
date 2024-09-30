@@ -1,61 +1,97 @@
 import { Persona } from "./Persona";
 import { Empleado } from "./Empleado";
+import { Direccion } from './Direccion';
 
 // persona
-const persona1 = new Persona("Dilbani", 25)
+
+const direccion: Direccion = {
+    calle: "calle 80",
+    ciudad: "Cali",
+    pais: "Colombia"
+};
+
+const persona1 = new Persona("Dilbani", 25, direccion)
 persona1.saludar();
+persona1.ciudad();
 
-const persona2 = new Persona("Luis", 45)
+const persona2 = new Persona("Luis", 45, direccion)
 persona2.saludar();
+persona2.ciudad();
 
-const persona3 = new Persona("Raul", 75)
+const persona3 = new Persona("Raul", 75, direccion)
 persona3.saludar();
+persona3.ciudad();
 
-const persona4 = new Persona("Camila", 25)
+const persona4 = new Persona("Camila", 25, direccion)
 persona4.saludar();
+persona4.ciudad();
 
-const persona5 = new Persona("Luisa", 55)
+const persona5 = new Persona("Luisa", 55, direccion)
 persona5.saludar();
+persona5.ciudad();
 
-const persona6 = new Persona("Viviana", 35)
+const persona6 = new Persona("Viviana", 35, direccion)
 persona6.saludar();
+persona6.ciudad();
 
-const persona7 = new Persona("Flor", 75)
+const persona7 = new Persona("Flor", 75, direccion)
 persona7.saludar();
+persona7.ciudad();
 
-const persona8 = new Persona("Jaime", 28)
+const persona8 = new Persona("Jaime", 28, direccion)
 persona8.saludar();
-
-const persona9 = new Persona("Carlos", 85)
+persona8.ciudad();
+const persona9 = new Persona("Carlos", 85, direccion)
 persona9.saludar();
+persona9.ciudad();
 
-const persona10 = new Persona("Juana", 15)
+const persona10 = new Persona("Juana", 15, direccion)
 persona10.saludar();
+persona10.ciudad();
 
 // Empleado 
-const empleado = new Empleado("Dilbani Enriquez", 25, 1590000)
+const empleado = new Empleado("Dilbani Enriquez", 25, 1590000, direccion)
 empleado.saludar();
 empleado.trabajar();
 
-const empleado1 = new Empleado("Luis", 45, 6350000)
+const empleado1 = new Empleado("Luis", 45, 6350000, direccion)
 empleado1.saludar();
-const empleado2 = new Empleado("Fanny", 65, 3500000)
+empleado1.ciudad();
+
+const empleado2 = new Empleado("Fanny", 65, 3500000, direccion)
 empleado2.saludar();
-const empleado3 = new Empleado("Jaime", 75, 5500000)
+empleado2.ciudad();
+
+const empleado3 = new Empleado("Jaime", 75, 5500000, direccion)
 empleado3.saludar();
-const empleado4 = new Empleado("Luis", 45, 2500000)
+empleado3.ciudad();
+
+const empleado4 = new Empleado("Luis", 45, 2500000, direccion)
 empleado4.saludar();
-const empleado5 = new Empleado("Fran", 85, 2700000)
+empleado4.ciudad();
+
+const empleado5 = new Empleado("Fran", 85, 2700000, direccion)
 empleado5.saludar();
-const empleado6 = new Empleado("Jose", 75, 4500000)
+empleado5.ciudad();
+
+const empleado6 = new Empleado("Jose", 75, 4500000, direccion)
 empleado6.saludar();
-const empleado7 = new Empleado("Olga", 45, 1500000)
+empleado6.ciudad();
+
+const empleado7 = new Empleado("Olga", 45, 1500000, direccion)
 empleado7.saludar();
-const empleado8 = new Empleado("Camila", 29, 1800000)
+empleado7.ciudad();
+
+const empleado8 = new Empleado("Camila", 29, 1800000, direccion)
 empleado8.saludar();
-const empleado9 = new Empleado("Ramro", 35, 1340000)
+empleado8.ciudad();
+
+const empleado9 = new Empleado("Ramro", 35, 1340000, direccion)
 empleado9.saludar();
-const empleado10 = new Empleado("Jass", 34, 4500000)
+empleado9.ciudad();
+
+const empleado10 = new Empleado("Jass", 34, 4500000, direccion)
 empleado10.saludar();
+empleado10.ciudad();
 
  
