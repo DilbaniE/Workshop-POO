@@ -1,4 +1,5 @@
 import { Persona } from "./Persona";
+import { Empleado } from "./Empleado";
 
 const persona1 = new Persona("Dilbani", 25)
 persona1.saludar();
@@ -30,5 +31,7 @@ persona9.saludar();
 const persona10 = new Persona("Juana", 15)
 persona10.saludar();
 
-
+const empleado = new Empleado("Dilbani Enriquez", 25,150000)
+empleado.saludar();
+empleado.trabajar();
 
