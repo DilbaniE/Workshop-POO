@@ -1,4 +1,4 @@
-class Persona {
+export class Persona {
     nombre: string
     edad: number
 
@@ -12,5 +12,3 @@ class Persona {
     }
 }
 
-const persona1 = new Persona("Dilbani", 25)
-persona1.saludar();
