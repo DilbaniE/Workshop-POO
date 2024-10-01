@@ -1,0 +1,1 @@
+# Ejecuta un archivo .ts
