@@ -4,6 +4,7 @@ import { Direccion } from './Direccion';
 import { crearPersonaJson } from './Util';
 import { Moto } from "./Moto";
 import { Coche } from "./Coche";
+import { Vehiculo } from "./Vehiculo";
 
 // persona
 
@@ -13,42 +14,46 @@ const direccion: Direccion = {
     pais: "Colombia"
 };
 
-const persona1 = new Persona("Dilbani", 25, direccion)
+//Vehiculo
+const carro = new Coche("Toyota");
+const moto = new Moto("Zuzuky")
+
+const persona1 = new Persona("Dilbani", 25, direccion, [carro, moto])
 persona1.saludar();
 persona1.ciudad();
 
-const persona2 = new Persona("Luis", 45, direccion)
+const persona2 = new Persona("Luis", 45, direccion, [carro, moto])
 persona2.saludar();
 persona2.ciudad();
 
-const persona3 = new Persona("Raul", 75, direccion)
+const persona3 = new Persona("Raul", 75, direccion, [carro, moto])
 persona3.saludar();
 persona3.ciudad();
 
-const persona4 = new Persona("Camila", 25, direccion)
+const persona4 = new Persona("Camila", 25, direccion, [carro, moto])
 persona4.saludar();
 persona4.ciudad();
 
-const persona5 = new Persona("Luisa", 55, direccion)
+const persona5 = new Persona("Luisa", 55, direccion, [carro, moto])
 persona5.saludar();
 persona5.ciudad();
 
-const persona6 = new Persona("Viviana", 35, direccion)
+const persona6 = new Persona("Viviana", 35, direccion, [carro, moto])
 persona6.saludar();
 persona6.ciudad();
 
-const persona7 = new Persona("Flor", 75, direccion)
+const persona7 = new Persona("Flor", 75, direccion, [carro, moto])
 persona7.saludar();
 persona7.ciudad();
 
-const persona8 = new Persona("Jaime", 28, direccion)
+const persona8 = new Persona("Jaime", 28, direccion, [carro, moto])
 persona8.saludar();
 persona8.ciudad();
-const persona9 = new Persona("Carlos", 85, direccion)
+const persona9 = new Persona("Carlos", 85, direccion, [carro, moto])
 persona9.saludar();
 persona9.ciudad();
 
-const persona10 = new Persona("Juana", 15, direccion)
+const persona10 = new Persona("Juana", 15, direccion, [carro, moto])
 persona10.saludar();
 persona10.ciudad();
 persona10.crearPersonaJson();
@@ -99,8 +104,5 @@ empleado10.saludar();
 empleado10.ciudad();
 
  //Moto
- const moto = new Moto()
  moto.arrancar();
-
- const carro = new Coche()
 carro.arrancar();
