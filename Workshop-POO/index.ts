@@ -1,6 +1,7 @@
 import { Persona } from "./Persona";
 import { Empleado } from "./Empleado";
 import { Direccion } from './Direccion';
+import { crearPersonaJson } from './Util';
 
 // persona
 
@@ -48,6 +49,7 @@ persona9.ciudad();
 const persona10 = new Persona("Juana", 15, direccion)
 persona10.saludar();
 persona10.ciudad();
+persona10.crearPersonaJson();
 
 // Empleado 
 const empleado = new Empleado("Dilbani Enriquez", 25, 1590000, direccion)

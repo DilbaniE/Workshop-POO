@@ -20,7 +20,14 @@ export class Persona{
 
     ciudad(){
         console.log(`la ciudad es ${this.direccion.ciudad}`);
-        
+    }
+
+    crearPersonaJson(): any {
+        return{
+            nombre: this.nombre,
+            edad: this.edad,
+            direccion: this.direccion
+        };
     }
     
 }
