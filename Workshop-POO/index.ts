@@ -2,6 +2,8 @@ import { Persona } from "./Persona";
 import { Empleado } from "./Empleado";
 import { Direccion } from './Direccion';
 import { crearPersonaJson } from './Util';
+import { Moto } from "./Moto";
+import { Coche } from "./Coche";
 
 // persona
 
@@ -96,4 +98,9 @@ const empleado10 = new Empleado("Jass", 34, 4500000, direccion)
 empleado10.saludar();
 empleado10.ciudad();
 
- 
+ //Moto
+ const moto = new Moto()
+ moto.arrancar();
+
+ const carro = new Coche()
+carro.arrancar();
