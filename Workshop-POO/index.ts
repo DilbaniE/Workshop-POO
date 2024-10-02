@@ -17,7 +17,7 @@ const empleadosEnJson = converEmpleadoJson(empleados)
 console.log(empleadosEnJson);
 
 
-// persona
+// Direccion
 const direccion: Direccion = {
     calle: "calle 80",
     ciudad: "Cali",
@@ -28,7 +28,7 @@ const direccion: Direccion = {
 const carro = new Coche("Toyota");
 const moto = new Moto("Zuzuky")
 
-
+//Persona
 const persona1 = new Persona("Dilbani", 25, direccion, [carro, moto], EstadoCivil.Casado)
 persona1.saludar();
 persona1.ciudad();
@@ -114,6 +114,6 @@ const empleado10 = new Empleado("Jass", 34, 4500000, direccion, EstadoCivil.Casa
 empleado10.saludar();
 empleado10.ciudad();
 
- //Moto
- moto.arrancar();
+ //Vehiculo
+moto.arrancar();
 carro.arrancar();
