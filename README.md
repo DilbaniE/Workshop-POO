@@ -5,8 +5,8 @@ Este proyecto es un ejercicio práctico de Programación Orientada a Objetos (PO
 ## Estructura del Proyecto
 
 El proyecto está compuesto por varias clases e interfaces que modelan diferentes entidades y sus relaciones. A continuación se muestra un diagrama UML que representa la estructura general del proyecto:
+![image](https://github.com/user-attachments/assets/6cfcae2d-9933-4686-af89-cc1544aa908c)
 
-![Diagrama de Clases UML](![image](https://github.com/user-attachments/assets/b27c488d-ca11-4262-80e7-77d3ed3c3f7e))
 
 ## Clases Principales
 
