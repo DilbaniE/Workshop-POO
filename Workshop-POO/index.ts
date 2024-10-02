@@ -1,13 +1,22 @@
 import { Persona } from "./Persona";
 import { Empleado } from "./Empleado";
 import { Direccion } from './Direccion';
-import { crearPersonaJson } from './Util';
 import { Moto } from "./Moto";
 import { Coche } from "./Coche";
-import { Vehiculo } from "./Vehiculo";
+import empleadosJson from './empleados.json';
+
+const converJsonEmpleados = (jsonData: any[]) =>
+    jsonData.map(data => Empleado.desdeJson(data));
+
+const converEmpleadoJson = (empleados: Empleado[]) =>
+    JSON.stringify(empleados.map(empleado => empleado.objeJson()), null, 2)
+
+const empleados = converJsonEmpleados(empleadosJson.empleados);
+const empleadosEnJson = converEmpleadoJson(empleados)
+console.log(empleadosEnJson);
+
 
 // persona
-
 const direccion: Direccion = {
     calle: "calle 80",
     ciudad: "Cali",
