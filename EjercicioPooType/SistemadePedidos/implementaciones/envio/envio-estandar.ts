@@ -1,5 +1,0 @@
-class EnvioEstandar {
-    constructor(parameters) {
-        
-    }
-}
